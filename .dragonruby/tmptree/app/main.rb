@@ -9,6 +9,7 @@ end
 
 def gravity(args)
   return unless args.state.first.zero?
+
   args.state.player_accel = args.state.player_accel - args.state.gravity_coeff
   if args.state.player_y + args.state.player_accel <= 0
     args.state.player_accel = -args.state.player_accel - 5
@@ -55,15 +56,12 @@ def init_player(args)
     y: args.state.player_y, # Y
     w: 64, # WIDTH
     h: 64, # HEIGHT
-    path: 'sprites/frame1-cscaled.png'
-  }
+    path: 'sprites/frame1-cscaled.png'}
 end
 
 def tick(args)
   args.state.first ||= 1
-  if args.state.first == 1
-    args.outputs.labels << [640, 360, 'Press space or tap the screen to fly', 3, 1, 0, 0, 0]
-  end
+  first_check(args)
   args.state.player_score ||= 0
   args.outputs.background_color = [0, 0, 0]
   args.state.flap ||= 0
@@ -78,14 +76,12 @@ def tick(args)
     generate_pipes(args)
     args.state.pipe_timer = 100
   end
+  reject_pipes_and_score(args)
   init_player(args)
   get_randomness(args)
   update_pipes(args)
   gravity(args)
-  reset_game(args) if args.inputs.keyboard.key_down.r
-  if args.inputs.mouse.click && args.state.dead == 1
-    reset_game(args)
-  end
+  reset_game(args)
   if (args.inputs.keyboard.key_down.space && args.state.dead.zero?) || (args.inputs.mouse.click && args.state.dead.zero?)
     args.state.first = 0
     jump args
@@ -99,16 +95,29 @@ def tick(args)
     args.outputs.background_color = [0, 0, 0]
   end
   args.state.first = 0 if args.state.player_y != 332
-  pipes_before = args.state.pipes.length
-  args.state.pipes.reject! { |w| w.x < -100 }
-  args.state.player_score += 1 if args.state.pipes.count < pipes_before
   args.outputs.solids << args.state.pipes
   args.outputs.sprites << args.state.player
   args.outputs.background_color = [0, 0, 0]
   args.outputs.labels << [20, 700, args.state.player_score, 3, 0, 0, 0, 0]
 end
 
+def first_check(args)
+  return unless args.state.first == 1
+
+  args.outputs.labels << [640, 360, 'Press space or tap the screen to fly', 3, 1, 0, 0, 0]  
+end
+
+def reject_pipes_and_score(args)
+  return unless args.state.pipe_timer <= 50
+
+  pipes_before = args.state.pipes.length
+  args.state.pipes.reject! { |w| w.x < -100 }
+  args.state.player_score += 1 if args.state.pipes.count < pipes_before
+end
+
 def reset_game(args)
+  return unless args.inputs.mouse.click && args.state.dead == 1
+
   args.state.player_x = 100
   args.state.player_y = 332
   args.state.player_accel = 0
