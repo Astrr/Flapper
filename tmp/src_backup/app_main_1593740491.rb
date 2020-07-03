@@ -81,7 +81,10 @@ def tick(args)
   get_randomness(args)
   update_pipes(args)
   gravity(args)
-  reset_game(args)
+  reset_game(args) if args.inputs.keyboard.key_down.r
+  if args.inputs.mouse.click && args.state.dead == 1
+    reset_game(args)
+  end
   if (args.inputs.keyboard.key_down.space && args.state.dead.zero?) || (args.inputs.mouse.click && args.state.dead.zero?)
     args.state.first = 0
     jump args
@@ -116,8 +119,6 @@ def reject_pipes_and_score(args)
 end
 
 def reset_game(args)
-  return unless args.inputs.mouse.click && args.state.dead == 1
-
   args.state.player_x = 100
   args.state.player_y = 332
   args.state.player_accel = 0

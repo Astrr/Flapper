@@ -81,7 +81,8 @@ def tick(args)
   get_randomness(args)
   update_pipes(args)
   gravity(args)
-  reset_game(args)
+  reset_game(args) if args.inputs.keyboard.key_down.r
+    reset_game(args)
   if (args.inputs.keyboard.key_down.space && args.state.dead.zero?) || (args.inputs.mouse.click && args.state.dead.zero?)
     args.state.first = 0
     jump args
