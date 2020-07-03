@@ -131,7 +131,7 @@ end
 def reset_game(args)
   return unless args.inputs.keyboard.key_down.r
 
-  args.state.player_x = 50
+  args.state.player_x = 100
   args.state.player_y = 332
   args.state.player_accel = 0
   args.state.gravity_coeff = 0.5
@@ -146,7 +146,7 @@ def reset_game(args)
   args.outputs.background_color = [0, 0, 0]
   return unless (args.inputs.mouse.click && args.state.dead == 1) or (args.inputs.keyboard.key_down.r && args.state.dead == 1)
 
-  args.state.player_x = 50
+  args.state.player_x = 100
   args.state.player_y = 332
   args.state.player_accel = 0
   args.state.gravity_coeff = 0.5
@@ -162,7 +162,7 @@ def reset_game(args)
 end
 
 def player_ded(args)
-  args.state.player_x = 48
+  args.state.player_x = 96
   args.outputs.background_color = [0, 0, 0]
   args.state.dead = 1
   args.outputs.labels << [640, 360, 'You died, press R or tap the screen to retry', 3, 1, 0, 0, 0]

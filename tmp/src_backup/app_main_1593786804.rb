@@ -162,7 +162,7 @@ def reset_game(args)
 end
 
 def player_ded(args)
-  args.state.player_x = 48
+  args.state.player_x = 46
   args.outputs.background_color = [0, 0, 0]
   args.state.dead = 1
   args.outputs.labels << [640, 360, 'You died, press R or tap the screen to retry', 3, 1, 0, 0, 0]
