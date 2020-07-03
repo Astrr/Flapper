@@ -547,8 +547,9 @@ var Module = {
     p.style.top = '75%';
     div.appendChild(p);
 
-    document.body.appendChild(div);
-    div.addEventListener('click', Module.clickToPlayListener);
+    //document.body.appendChild(div);
+    //iv.addEventListener('click', Module.clickToPlayListener);
+    Module["callMain"](); // go go go!
   },
   preRun: function() {
     // set up a persistent store for save games, etc.

@@ -110,7 +110,7 @@ end
 def first_check(args)
   return unless args.state.first == 1
 
-  args.outputs.labels << [640, 360, 'Press space or tap the screen to fly', 3, 1, 0, 0, 0]
+  args.outputs.labels << [640, 360, 'Press space or tap the screen to fly', 3, 1, 0, 0, 0]  
 end
 
 def collision_check(args)
@@ -129,22 +129,7 @@ def reject_pipes_and_score(args)
 end
 
 def reset_game(args)
-  return unless args.inputs.keyboard.key_down.r
-
-  args.state.player_x = 100
-  args.state.player_y = 332
-  args.state.player_accel = 0
-  args.state.gravity_coeff = 0.5
-  args.state.pipes = []
-  args.state.dead = 0
-  args.state.pipe_timer = 70
-  args.state.player_accel = 0
-  args.outputs.solids.clear
-  args.state.dead = 0
-  args.state.player_score = 0
-  args.outputs.solids << [0, 0, 1280, 720, 50, 130, 190]
-  args.outputs.background_color = [0, 0, 0]
-  return unless (args.inputs.mouse.click && args.state.dead == 1) or (args.inputs.keyboard.key_down.r && args.state.dead == 1)
+  return unless args.inputs.mouse.click && args.state.dead == 1
 
   args.state.player_x = 100
   args.state.player_y = 332
@@ -162,7 +147,6 @@ def reset_game(args)
 end
 
 def player_ded(args)
-  args.state.player_x = 96
   args.outputs.background_color = [0, 0, 0]
   args.state.dead = 1
   args.outputs.labels << [640, 360, 'You died, press R or tap the screen to retry', 3, 1, 0, 0, 0]

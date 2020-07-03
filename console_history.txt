@@ -1,5 +1,3 @@
-$gtk.grep_source [".state", ''], ["state", '']
-$gtk.grep_source [".args", ''], ["args", '']
 $gtk.reset seed: 1593740143
 $gtk.grep_source [".argss +=", '']
 $gtk.grep_source [".walls_count_before_removal +=", '']
@@ -50,6 +48,4 @@ $gtk.reset seed: 15930280342341
 $gtk.reset seed: 1593113741
 $gtk.reset seed: 1593127507
 $gtk.reset seed: 159312750121234241
-init_player(args)
-init_player
-init_player(1)
+$gtk.reset seed: 1593786147

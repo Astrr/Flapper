@@ -129,7 +129,7 @@ def reject_pipes_and_score(args)
 end
 
 def reset_game(args)
-  return unless args.inputs.keyboard.key_down.r
+  return unless args.inputs.keyboard.key_down.r && args.state.dead == 1
 
   args.state.player_x = 100
   args.state.player_y = 332
