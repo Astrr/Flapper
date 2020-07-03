@@ -1,0 +1,13 @@
+# * EXCEPTION:
+# * ERROR:
+# Unhandled method_missing with name :rect=, args [[100, 360, 64, 64]] was invoked on [GTK::Primitive::Point, GTK::Geometry, GTK::Primitive::Common, GTK::Primitive::ConversionCapabilities, Enumerable].
+# self#inspect:
+# [100, 360, 64, 64, "sprites/circle-violet.png"]
+# The method named :rect= doesn't exist on [GTK::Primitive::Point, GTK::Geometry, GTK::Primitive::Common, GTK::Primitive::ConversionCapabilities, Enumerable].
+# 
+# Here's a list of methods that kind of look like :rect=.
+# :rect, :rect_shift, :rect_shift_down, :rect_shift_left, :rect_shift_right, :rect_shift_up
+# 
+
+Game State:
+{:state=>{:entity_id=>2, :tick_count=>3, :__thrash_count__=>{}, :dead=>0, :pipes=>[], :pipe_timer=>66, :player_x=>100, :player_y=>360, :player_accel=>0, :gravity_coeff=>0,5.0, :player=>[100, 360, 64, 64, "sprites/circle-violet.png"]}, :inputs=>{:controller_one=>{:key_down=>{}, :key_held=>{}, :key_up=>{}}, :controller_two=>{:key_down=>{}, :key_held=>{}, :key_up=>{}}, :keyboard=>{:key_up=>{:truthy_keys=>[]}, :key_held=>{:truthy_keys=>[]}, :key_down=>{:truthy_keys=>[]}, :has_focus=>false}, :mouse=>{:x=>462.0, :y=>257.0, :moved=>nil, :moved_at=>0, :has_focus=>false}, :text=>[]}, :passes=>[], :outputs=>{:solids=>[[0, 0, 1280, 720, 50, 130, 190]], :sprites=>[], :lines=>[], :labels=>[[100, 100, 0]], :sounds=>[], :borders=>[], :primitives=>[], :static_solids=>[], :static_borders=>[], :static_sprites=>[], :static_lines=>[], :static_labels=>[], :static_primitives=>[]}, :grid=>{:ffi_draw=>"", :name=>:bottom_left, :origin_x=>0.0, :origin_y=>720, :left=>0.0, :right=>1280, :top=>720, :bottom=>0.0, :left_margin=>0.0, :bottom_margin=>0.0, :center_x=>640.0, :center_y=>360.0, :rect=>[0.0, 0.0, 1280, 720], :center=>[640.0, 360.0]}}

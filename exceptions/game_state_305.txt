@@ -1,0 +1,7 @@
+# * EXCEPTION:
+# * ERROR:
+# Undefined method reset_player for main.
+# 
+
+Game State:
+{:state=>{:entity_id=>16, :tick_count=>305, :__thrash_count__=>{}, :dead=>0, :pipes=>[[104, 0, 100, 12], [104, -188, 100, 720], [904, 0, 100, 71], [904, -129, 100, 720], [1704, 0, 100, 45], [1704, -155, 100, 720]], :pipe_timer=>64, :player_x=>100, :player_y=>519,5.0, :player_accel=>-11,5.0, :gravity_coeff=>0,5.0, :player=>{:x=>100, :y=>531.0, :w=>64, :h=>71,36.0, :path=>"sprites/circle-violet.png"}, :upper_height=>40, :lower_height=>-160}, :inputs=>{:controller_one=>{:key_down=>{}, :key_held=>{}, :key_up=>{}}, :controller_two=>{:key_down=>{}, :key_held=>{}, :key_up=>{}}, :keyboard=>{:key_up=>{:truthy_keys=>[]}, :key_held=>{:char=>278, :raw_key=>278, :truthy_keys=>[:char, :raw_key]}, :key_down=>{:truthy_keys=>[]}, :has_focus=>true}, :mouse=>{:x=>698.0, :y=>624.0, :moved=>nil, :moved_at=>299, :has_focus=>true}, :text=>[]}, :passes=>[], :outputs=>{:solids=>[[0, 0, 1280, 720, 50, 130, 190]], :sprites=>[], :lines=>[], :labels=>[[100, 100, -11.0]], :sounds=>[], :borders=>[], :primitives=>[], :static_solids=>[], :static_borders=>[], :static_sprites=>[], :static_lines=>[], :static_labels=>[], :static_primitives=>[]}, :grid=>{:ffi_draw=>"", :name=>:bottom_left, :origin_x=>0.0, :origin_y=>720, :left=>0.0, :right=>1280, :top=>720, :bottom=>0.0, :left_margin=>0.0, :bottom_margin=>0.0, :center_x=>640.0, :center_y=>360.0, :rect=>[0.0, 0.0, 1280, 720], :center=>[640.0, 360.0]}}

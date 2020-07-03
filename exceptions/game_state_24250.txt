@@ -1,0 +1,7 @@
+# * EXCEPTION:
+# * ERROR:
+# Undefined method mod for main.
+# 
+
+Game State:
+{:state=>{:entity_id=>88, :tick_count=>24250, :__thrash_count__=>{}, :player_x=>100, :player_y=>100, :player_accel=>0, :gravity_coeff=>0,5.0, :player=>[100, 100, 64, 64, "sprites/circle-violet.png"], :upper_height=>401, :lower_height=>319}, :inputs=>{:controller_one=>{:key_down=>{}, :key_held=>{}, :key_up=>{}}, :controller_two=>{:key_down=>{}, :key_held=>{}, :key_up=>{}}, :keyboard=>{:key_up=>{:truthy_keys=>[]}, :key_held=>{:char=>23478, :raw_key=>23478, :truthy_keys=>[:char, :raw_key]}, :key_down=>{:truthy_keys=>[]}, :has_focus=>false}, :mouse=>{:x=>1055.0, :y=>1.0, :moved=>nil, :moved_at=>23845, :has_focus=>false}, :text=>[]}, :passes=>[], :outputs=>{:solids=>[[1000, 0, 100, 401], [1000, 720, 100, -219]], :sprites=>[], :lines=>[], :labels=>[[100, 100, 0]], :sounds=>[], :borders=>[], :primitives=>[], :static_solids=>[], :static_borders=>[], :static_sprites=>[], :static_lines=>[], :static_labels=>[], :static_primitives=>[]}, :grid=>{:ffi_draw=>"", :name=>:bottom_left, :origin_x=>0.0, :origin_y=>720, :left=>0.0, :right=>1280, :top=>720, :bottom=>0.0, :left_margin=>0.0, :bottom_margin=>0.0, :center_x=>640.0, :center_y=>360.0, :rect=>[0.0, 0.0, 1280, 720], :center=>[640.0, 360.0]}}

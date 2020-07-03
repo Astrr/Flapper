@@ -1,0 +1,6 @@
+devid=astrr
+devtitle=Astrr
+gameid=flapper
+gametitle=Flapper
+version=0.0.1
+icon=metadata/icon.png

@@ -1,0 +1,49 @@
+$gtk.grep_source [".argss +=", '']
+$gtk.grep_source [".walls_count_before_removal +=", '']
+$gtk.grep_source [".state +=", '']
+$gtk.reset seed: 1593126763
+$gtk.grep_source [".-", ''], ["-", '']
+$gtk.grep_source [".player", ''], ["player", '']a
+$gtk.grep_source [".solids =", "remove assignment and use << or .clear instead."]r
+$gtk.grep_source [".reset_player +=", '']a
+$gtk.grep_source [".rect +=", '']
+$gtk.grep_source [".x +=", '']
+$gtk.grep_source [".rect=", ''], ["rect=", '']
+$gtk.reset seed: 1593021200
+$gtk.grep_source [".generate_randomness +=", '']
+$gtk.grep_source [".generate_randomness +=", '']a
+$gtk.grep_source [".iszero?", ''], ["iszero?", '']
+$gtk.grep_source [".pipes", ''], ["pipes", '']
+$gtk.grep_source [".abs +=", '']
+$gtk.grep_source [".mod +=", '']
+$gtk.grep_source [".sample", ''], ["sample", '']
+$gtk.grep_source [".-@", ''], ["-@", '']
+$gtk.grep_source [".player_x +=", '']
+$gtk.grep_source [".player +=", '']
+$gtk.grep_source [".args +=", '']
+$gtk.reset seed: 1592954543
+$gtk.reset seed: 1592954543fsd
+$gtk.reset seed: 1592954
+$gtk.reset seed: 159295
+$gtk.reset seed: 15929521312
+$gtk.reset seed: 15929521312123
+$gtk.reset seed: 15929
+$gtk.reset seed: 1592923123
+$gtk.reset seed: 159292312
+$gtk.reset seed: 15929231
+$gtk.reset seed: 1592923
+$gtk.reset seed: 159292
+$gtk.reset seed: 1592321123
+$gtk.reset seed: 1592321123324
+$gtk.reset seed: 15923211
+$gtk.reset seed: 1592321143
+$gtk.reset seed: 15923211432
+$gtk.reset seed: 1593028039
+$gtk.grep_source [".reset_player +=", '']
+$gtk.reset seed: 159302803
+$gtk.reset seed: 1593028034234
+$gtk.reset seed: 159302803423412342
+$gtk.reset seed: 15930280342341
+$gtk.reset seed: 1593113741
+$gtk.reset seed: 1593127507
+$gtk.reset seed: 159312750121234241

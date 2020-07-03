@@ -1,0 +1,9 @@
+# * EXCEPTION:
+# * ERROR:
+# The solids property on outputs no longer supports
+# reassignment. Please use the << operator instead. Or if you need to
+# clear it use the .clear method instead.
+# 
+
+Game State:
+{:state=>{:entity_id=>35, :tick_count=>6901, :__thrash_count__=>{}, :dead=>1, :pipes=>[[-640, 0, 100, 293], [-640, 493, 100, 720], [160, 0, 100, 64], [160, 264, 100, 720], [960, 0, 100, 334], [960, 534, 100, 720], [1760, 0, 100, 502], [1760, 702, 100, 720]], :pipe_timer=>-6432, :player_x=>100, :player_y=>0, :player_accel=>0, :gravity_coeff=>0,5.0, :player=>{:x=>100, :y=>0, :w=>64, :h=>64, :path=>"sprites/circle-violet.png"}, :upper_height=>341, :lower_height=>179, :walls=>[]}, :inputs=>{:controller_one=>{:key_down=>{}, :key_held=>{}, :key_up=>{}}, :controller_two=>{:key_down=>{}, :key_held=>{}, :key_up=>{}}, :keyboard=>{:key_up=>{:truthy_keys=>[]}, :key_held=>{:char=>5862, :raw_key=>5862, :truthy_keys=>[:char, :raw_key]}, :key_down=>{:char=>"r", :raw_key=>114, :r=>6900, :truthy_keys=>[:char, :raw_key, :r]}, :has_focus=>true}, :mouse=>{:x=>492.0, :y=>273.0, :moved=>nil, :moved_at=>6861, :has_focus=>true}, :text=>["r"]}, :passes=>[], :outputs=>{:solids=>[[0, 0, 1280, 720, 50, 130, 190]], :sprites=>[], :lines=>[], :labels=>[], :sounds=>[], :borders=>[], :primitives=>[], :static_solids=>[], :static_borders=>[], :static_sprites=>[], :static_lines=>[], :static_labels=>[], :static_primitives=>[]}, :grid=>{:ffi_draw=>"", :name=>:bottom_left, :origin_x=>0.0, :origin_y=>720, :left=>0.0, :right=>1280, :top=>720, :bottom=>0.0, :left_margin=>0.0, :bottom_margin=>0.0, :center_x=>640.0, :center_y=>360.0, :rect=>[0.0, 0.0, 1280, 720], :center=>[640.0, 360.0]}}

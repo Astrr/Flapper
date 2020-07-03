@@ -1,0 +1,9 @@
+# * EXCEPTION:
+# ** Failed to reload app/main.rb.
+# line 5:14: syntax error, unexpected '-', expecting ')'
+# line 7:3: syntax error, unexpected keyword_end, expecting $end
+# 
+# 
+
+Game State:
+{:state=>{:entity_id=>52, :tick_count=>249, :__thrash_count__=>{}, :player_x=>100, :player_y=>-15327,5.0, :player_accel=>-125.0, :gravity_coeff=>0,5.0, :player=>[100, -15202,5.0, 64, 64, "sprites/circle-violet.png"], :upper_height=>30, :lower_height=>750}, :inputs=>{:controller_one=>{:key_down=>{}, :key_held=>{}, :key_up=>{}}, :controller_two=>{:key_down=>{}, :key_held=>{}, :key_up=>{}}, :keyboard=>{:key_up=>{:truthy_keys=>[]}, :key_held=>{:truthy_keys=>[]}, :key_down=>{:truthy_keys=>[]}, :has_focus=>false}, :mouse=>{:x=>1163.0, :y=>1.0, :moved=>nil, :moved_at=>65, :has_focus=>false}, :text=>[]}, :passes=>[{:solids=>[[1000, 0, 100, 30], [1000, 750, 100, 720]], :sprites=>[[100, -15202,5.0, 64, 64, "sprites/circle-violet.png"]], :lines=>[], :labels=>[[100, 100, -124,5.0]], :sounds=>[], :borders=>[], :primitives=>[], :static_solids=>[], :static_borders=>[], :static_sprites=>[], :static_lines=>[], :static_labels=>[], :static_primitives=>[]}], :outputs=>{:solids=>[[1000, 0, 100, 30], [1000, 750, 100, 720]], :sprites=>[[100, -15202,5.0, 64, 64, "sprites/circle-violet.png"]], :lines=>[], :labels=>[[100, 100, -124,5.0]], :sounds=>[], :borders=>[], :primitives=>[], :static_solids=>[], :static_borders=>[], :static_sprites=>[], :static_lines=>[], :static_labels=>[], :static_primitives=>[]}, :grid=>{:ffi_draw=>"", :name=>:bottom_left, :origin_x=>0.0, :origin_y=>720, :left=>0.0, :right=>1280, :top=>720, :bottom=>0.0, :left_margin=>0.0, :bottom_margin=>0.0, :center_x=>640.0, :center_y=>360.0, :rect=>[0.0, 0.0, 1280, 720], :center=>[640.0, 360.0]}}

@@ -1,0 +1,13 @@
+# * EXCEPTION:
+# * ERROR:
+# Unhandled method_missing with name :player, args [] was invoked on [GTK::Primitive::ConversionCapabilities, Enumerable].
+# self#inspect:
+# []
+# The method named :player doesn't exist on [GTK::Primitive::ConversionCapabilities, Enumerable].
+# 
+# Here's a list of methods that kind of look like :player.
+# :player_ded
+# 
+
+Game State:
+{:state=>{:entity_id=>13, :tick_count=>14010, :__thrash_count__=>{}, :flap=>0, :dead=>1, :pipes=>[[156, 0, 100, 390], [156, 590, 100, 720], [956, 0, 100, 57], [956, 257, 100, 720]], :pipe_timer=>-13741, :player_x=>100, :player_y=>0, :player_accel=>0, :gravity_coeff=>0,5.0, :player=>{:x=>100, :y=>0, :w=>64, :h=>64, :path=>"sprites/wingMan1.png"}, :upper_height=>87, :lower_height=>433, :anim_in_progress=>1, :anim_frame=>0, :counter_frame=>0}, :inputs=>{:controller_one=>{:key_down=>{}, :key_held=>{}, :key_up=>{}}, :controller_two=>{:key_down=>{}, :key_held=>{}, :key_up=>{}}, :keyboard=>{:key_up=>{:truthy_keys=>[]}, :key_held=>{:char=>12775, :raw_key=>12775, :truthy_keys=>[:char, :raw_key]}, :key_down=>{:char=>"a", :raw_key=>97, :a=>14009, :truthy_keys=>[:char, :raw_key, :a]}, :has_focus=>true}, :mouse=>{:x=>781.0, :y=>124.0, :moved=>nil, :moved_at=>14000, :has_focus=>true}, :text=>["a"]}, :passes=>[], :outputs=>{:solids=>[[0, 0, 1280, 720, 50, 130, 190]], :sprites=>[], :lines=>[], :labels=>[], :sounds=>[], :borders=>[], :primitives=>[], :static_solids=>[], :static_borders=>[], :static_sprites=>[], :static_lines=>[], :static_labels=>[], :static_primitives=>[]}, :grid=>{:ffi_draw=>"", :name=>:bottom_left, :origin_x=>0.0, :origin_y=>720, :left=>0.0, :right=>1280, :top=>720, :bottom=>0.0, :left_margin=>0.0, :bottom_margin=>0.0, :center_x=>640.0, :center_y=>360.0, :rect=>[0.0, 0.0, 1280, 720], :center=>[640.0, 360.0]}}

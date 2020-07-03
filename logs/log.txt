@@ -1,0 +1,57 @@
+DragonRuby GTK Log Messages. Set $gtk.log_level = :off to disable logging to the Console/HUD (log messages will still be written here). Log options are: :on, :off.
+* INFO: Marked app/main.rb for reload. (-1)
+
+Hello World!
+Within the game *press the key that is directly to the left of "1" on the top row of your keyboard* to bring up the DragonRuby GTK Console.
+After the console opens, type "help" and press the ENTER key to look around.
+Don't worry. This notification will not be displayed when you release your game (it only displays during development).
+
+[Message ID: [:hello_world]]
+
+* INFO: raw_key: 32 [:space]
+* INFO: raw_key: 32 [:space]
+* INFO: raw_key: 32 [:space]
+* INFO: raw_key: 32 [:space]
+* INFO: raw_key: 32 [:space]
+* INFO: raw_key: 32 [:space]
+* INFO: raw_key: 32 [:space]
+* INFO: raw_key: 32 [:space]
+* INFO: raw_key: 32 [:space]
+* INFO: raw_key: 32 [:space]
+* INFO: raw_key: 51 [:three, :meta, :shift]
+* INFO: raw_key: 1073742049
+* INFO: raw_key: 1073742051
+* INFO: raw_key: 32 [:space]
+* INFO: raw_key: 114 [:r]
+* INFO: raw_key: 32 [:space]
+* INFO: raw_key: 32 [:space]
+* INFO: raw_key: 32 [:space]
+* INFO: raw_key: 32 [:space]
+* INFO: raw_key: 32 [:space]
+* INFO: raw_key: 1073741881
+* INFO: raw_key: 1073742051
+* INFO: raw_key: 1073742049
+* INFO: raw_key: 27 [:escape]
+* INFO: raw_key: 114 [:r]
+* INFO: raw_key: 32 [:space]
+* INFO: raw_key: 32 [:space]
+* INFO: raw_key: 32 [:space]
+* INFO: raw_key: 32 [:space]
+* INFO: raw_key: 32 [:space]
+* INFO: raw_key: 114 [:r]
+* INFO: raw_key: 32 [:space]
+* INFO: raw_key: 32 [:space]
+* INFO: raw_key: 32 [:space]
+* INFO: raw_key: 32 [:space]
+* INFO: raw_key: 32 [:space]
+* INFO: raw_key: 32 [:space]
+* INFO: raw_key: 32 [:space]
+* INFO: raw_key: 32 [:space]
+* INFO: raw_key: 32 [:space]
+* INFO: raw_key: 32 [:space]
+* INFO: raw_key: 32 [:space]
+* INFO: raw_key: 1073742049
+* INFO: raw_key: 1073742051
+* INFO: raw_key: 1073742051
+* INFO: raw_key: 1073742049
+* INFO: raw_key: 27 [:escape]
