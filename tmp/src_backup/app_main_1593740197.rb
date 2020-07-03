@@ -61,7 +61,9 @@ end
 
 def tick(args)
   args.state.first ||= 1
-  first_check(args)
+  if args.state.first == 1
+    args.outputs.labels << [640, 360, 'Press space or tap the screen to fly', 3, 1, 0, 0, 0]
+  end
   args.state.player_score ||= 0
   args.outputs.background_color = [0, 0, 0]
   args.state.flap ||= 0
@@ -74,9 +76,11 @@ def tick(args)
   end
   if args.state.pipe_timer.zero? && args.state.dead.zero? && args.state.first.zero?
     generate_pipes(args)
+    reject_pipes_and_score(args)
     args.state.pipe_timer = 100
   end
-  reject_pipes_and_score(args)
+  if args.state.pipe_timer//50 == 1 && args.state.dead.zero? && args.state.first.zero?
+  end
   init_player(args)
   get_randomness(args)
   update_pipes(args)
@@ -104,15 +108,11 @@ def tick(args)
   args.outputs.labels << [20, 700, args.state.player_score, 3, 0, 0, 0, 0]
 end
 
-def first_check(args)
-  return unless args.state.first == 1
+def first_check
 
-  args.outputs.labels << [640, 360, 'Press space or tap the screen to fly', 3, 1, 0, 0, 0]  
 end
 
 def reject_pipes_and_score(args)
-  return unless args.state.pipe_timer <= 50
-
   pipes_before = args.state.pipes.length
   args.state.pipes.reject! { |w| w.x < -100 }
   args.state.player_score += 1 if args.state.pipes.count < pipes_before

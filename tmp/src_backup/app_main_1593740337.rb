@@ -74,9 +74,9 @@ def tick(args)
   end
   if args.state.pipe_timer.zero? && args.state.dead.zero? && args.state.first.zero?
     generate_pipes(args)
+    reject_pipes_and_score(args)
     args.state.pipe_timer = 100
   end
-  reject_pipes_and_score(args)
   init_player(args)
   get_randomness(args)
   update_pipes(args)
@@ -111,8 +111,6 @@ def first_check(args)
 end
 
 def reject_pipes_and_score(args)
-  return unless args.state.pipe_timer <= 50
-
   pipes_before = args.state.pipes.length
   args.state.pipes.reject! { |w| w.x < -100 }
   args.state.player_score += 1 if args.state.pipes.count < pipes_before

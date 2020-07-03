@@ -18,27 +18,6 @@ Don't worry. This notification will not be displayed when you release your game 
 * INFO: raw_key: 32 [:space]
 * INFO: raw_key: 32 [:space]
 * INFO: raw_key: 32 [:space]
-* INFO: raw_key: 51 [:three, :meta, :shift]
-* INFO: raw_key: 1073742049
-* INFO: raw_key: 1073742051
-* INFO: raw_key: 32 [:space]
-* INFO: raw_key: 114 [:r]
-* INFO: raw_key: 32 [:space]
-* INFO: raw_key: 32 [:space]
-* INFO: raw_key: 32 [:space]
-* INFO: raw_key: 32 [:space]
-* INFO: raw_key: 32 [:space]
-* INFO: raw_key: 1073741881
-* INFO: raw_key: 1073742051
-* INFO: raw_key: 1073742049
-* INFO: raw_key: 27 [:escape]
-* INFO: raw_key: 114 [:r]
-* INFO: raw_key: 32 [:space]
-* INFO: raw_key: 32 [:space]
-* INFO: raw_key: 32 [:space]
-* INFO: raw_key: 32 [:space]
-* INFO: raw_key: 32 [:space]
-* INFO: raw_key: 114 [:r]
 * INFO: raw_key: 32 [:space]
 * INFO: raw_key: 32 [:space]
 * INFO: raw_key: 32 [:space]
@@ -50,8 +29,12 @@ Don't worry. This notification will not be displayed when you release your game 
 * INFO: raw_key: 32 [:space]
 * INFO: raw_key: 32 [:space]
 * INFO: raw_key: 32 [:space]
-* INFO: raw_key: 1073742049
-* INFO: raw_key: 1073742051
-* INFO: raw_key: 1073742051
-* INFO: raw_key: 1073742049
-* INFO: raw_key: 27 [:escape]
+* INFO: raw_key: 32 [:space]
+* INFO: raw_key: 32 [:space]
+* INFO: raw_key: 32 [:space]
+* INFO: raw_key: 32 [:space]
+* INFO: raw_key: 32 [:space]
+* INFO: raw_key: 32 [:space]
+* INFO: raw_key: 32 [:space]
+* INFO: raw_key: 32 [:space]
+* INFO: Marked app/main.rb for reload. (1436)

@@ -1,3 +1,4 @@
+$gtk.reset seed: 1593740143
 $gtk.grep_source [".argss +=", '']
 $gtk.grep_source [".walls_count_before_removal +=", '']
 $gtk.grep_source [".state +=", '']
