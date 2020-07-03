@@ -604,3 +604,7 @@ tmp/src_backup/app_main_1593740327.rb, 1593740327
 tmp/src_backup/app_main_1593740337.rb, 1593740337
 tmp/src_backup/app_main_1593740468.rb, 1593740468
 tmp/src_backup/app_main_1593740491.rb, 1593740491
+tmp/src_backup/app_main_1593740632.rb, 1593740632
+tmp/src_backup/app_main_1593740640.rb, 1593740640
+tmp/src_backup/app_main_1593740641.rb, 1593740641
+tmp/src_backup/app_main_1593740725.rb, 1593740725
