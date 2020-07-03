@@ -82,18 +82,11 @@ def tick(args)
   update_pipes(args)
   gravity(args)
   reset_game(args)
-  if (args.inputs.keyboard.key_down.space && args.state.dead.zero?) || (args.inputs.mouse.click && args.state.dead.zero?)
-    args.state.first = 0
-    jump args
-    args.state.flap = 1
-  end
+  start_and_jump(args)
   args.state.first = 0 if args.inputs.keyboard.key_down.space || args.inputs.mouse.click
   animate_player args
   move_player(args)
-  if args.state.pipes.any? { |p| p.rect.intersect_rect?(args.state.player.rect) } || args.state.dead == 1
-    player_ded args
-    args.outputs.background_color = [0, 0, 0]
-  end
+  collision_check(args)
   args.state.first = 0 if args.state.player_y != 332
   args.outputs.solids << args.state.pipes
   args.outputs.sprites << args.state.player
@@ -101,10 +94,26 @@ def tick(args)
   args.outputs.labels << [20, 700, args.state.player_score, 3, 0, 0, 0, 0]
 end
 
+def start_and_jump(args)
+  return unless (args.inputs.keyboard.key_down.space && args.state.dead.zero?) || (args.inputs.mouse.click && args.state.dead.zero?)
+
+  args.state.first = 0
+  jump args
+  args.state.flap = 1
+
+end
+
 def first_check(args)
   return unless args.state.first == 1
 
   args.outputs.labels << [640, 360, 'Press space or tap the screen to fly', 3, 1, 0, 0, 0]  
+end
+
+def collision_check(args)
+  return unless args.state.pipes.any? { |p| p.rect.intersect_rect?(args.state.player.rect) } || args.state.dead == 1
+  
+  player_ded args
+  args.outputs.background_color = [0, 0, 0]
 end
 
 def reject_pipes_and_score(args)
